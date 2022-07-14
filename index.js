@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h2>Italian Trulli</h2>
+<h2>rg</h2>
 <img src="pic_trulli.jpg" alt="Italian Trullti" style="width:100%">
 <button class="mdc-button foo-button">
   <div class="mdc-button__ripple"></div>
