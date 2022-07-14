@@ -9,11 +9,13 @@
 
 <h2>rg</h2>
 <img src="pic_trulli.jpg" alt="Italian Trullti" style="width:100%">
-<button class="mdc-button foo-button" onClick="www.twitter.com">
+<button id="redirect_twitter" class="mdc-button foo-button" >
   <div class="mdc-button__ripple"></div>
-  <span class="mdc-button__label">Button</span>
+  <span class="mdc-button__label">Twitter</span>
 </button>
 <script>
+  document.getElementById("redirect_twitter").onClick = function(){
+  location.href = "www.twitter.com";};
   mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
   </script>
 </body>
