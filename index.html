@@ -10,10 +10,16 @@
 <body>
   <script src="/scripts/firebase.js"></script>
   <div class="mdc-card mdc-card--outlined">
-  <form>
-    <label for="title"></label><br>
-    <input id="title" name="title" type="text"><br>
-  </form>
+    <center>
+      <form>
+        <label class="mdc-text-field mdc-text-field--filled">
+          <span class="mdc-text-field__ripple"></span>
+          <span class="mdc-floating-label" id="title">Title</span>
+          <input class="mdc-text-field__input" type="text" aria-labelledby="title">
+          <span class="mdc-line-ripple"></span>
+        </label>
+      </form>
+    </center>
 </div>
 </body>
 </html>
