@@ -8,9 +8,10 @@
 }
 
 .responsive {
-    width: 100%;
-    max-width: 800px;
+  width: 100%;
+  height: auto;
 }
+
 @font-face { font-family: outlaw; src: url('/fonts/OUTLAW.TTF'); }
  .outlaw_font{
          font-family: outlaw      }
