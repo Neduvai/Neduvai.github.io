@@ -13,7 +13,7 @@
 @font-face { font-family: RioGrande; src: url('/fonts/RioGrande.TTF'); }
 @font-face { font-family: kanchi; src: url('/fonts/kanchi.TTF'); }
 @font-face { font-family: nn; src: url('/fonts/nn.TTF'); }
-@font-face { font-family: ATB; src: url('/fonts/ATB.TTF'); }
+@font-face { font-family: ATB; src: url(./fonts/ATB.TTF); }
 @font-face { font-family: ATM; src: url('/fonts/ATM.TTF'); }
 @font-face { font-family: ATEB; src: url('/fonts/ATEB.TTF'); }
 @font-face { font-family: ATL; src: url('/fonts/ATL.TTF'); }
