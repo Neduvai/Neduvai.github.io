@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/myowncss.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/allSStyles.min.css"> <!-- Normal Css files are in assets/css/* folders -->
+  <script src="js/script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/materialize.js"></script>
+</head>
+<body style="font-family:ATM;">
+  <span id="slideOpen" class="hamButton">&#9776;</span>
+  <div id="slideMenu" class="slidemenu" onload="closeSideNav">
+      <span id="slideClose" class="closeButton">&times;</span>
+      <ul>
+          <a href="./index.html"><li>முகப்பு</li></a>
+          <a href="#"><li class="tabActive">சிறுகதைகள்</li></a>
+          <a href="#"><li>புகைப்படங்கள்</li></a>
+          <a href="#"><li>தொடர்பு கொள்க</li></a>
+      </ul>
+  </div>
+  <main id="main">
+    <div class="container_grey">
+      <h5 id="ooruperu"style="font-family:ATB;font-size:4vh;padding:1vh;text-align:center;">சிறுகதைகள்</h5>
+      <div class="container">
+
+          <div id="20220718" onclick="window.location.href='./artsectionfiles/20220718.html'" class="waves-effect waves-red card" style="padding:1vh;" >
+            <img class="responsive" src="https://i.ytimg.com/vi/pzx2wV2dQ3A/maxresdefault.jpg"/><br>
+            <span class="flow-text" style="font-style:ATM;">கதைத்தலைப்பு</span><br>
+            <a href="" style="display: flex;align-items: center;"><i class="tiny material-icons">edit</i><span style="font-family:ATL;font-size:2vh;">அருண் குமார் கருணன்</span></a>
+          </div>
+      </div>
+      </div>
+</main>
+</body>
+</html>

@@ -1,3 +1,10 @@
+function closeSideNav(){
+
+    document.getElementById("slideMenu").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("main").style.width = "100%";
+
+}
 
 document.addEventListener("DOMContentLoaded",function(){
 
@@ -9,12 +16,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
     },false)
 
-    document.getElementById("slideClose").addEventListener('click',function(){
-
-        document.getElementById("slideMenu").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.getElementById("main").style.width = "100%";
-
-    },false)
+    document.getElementById("slideClose").addEventListener('click',closeSideNav,false)
 
 });
