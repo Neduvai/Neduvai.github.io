@@ -13,7 +13,7 @@
 }
 
 .tabActive{
-  color: white;
+  color: yellow;
 }
 @font-face { font-family: outlaw; src: url('/fonts/OUTLAW.TTF'); }
  .outlaw_font{
