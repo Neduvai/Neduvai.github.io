@@ -13,7 +13,17 @@
 
 .responsive {
   width: 100%;
+  max-height: 60vh;
+  display: block;
+  object-fit: cover;
   height: auto;
+}
+
+.center_aligned{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .tabActive{

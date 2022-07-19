@@ -34,6 +34,7 @@ db.collection("artsection").limit(20).get().then((querySnapshot) => {
               <span class="flow-text" style="font-style:ATM;">${doc.data().title}</span><br>
               <a href="" style="display: flex;align-items: center;"><i class="tiny material-icons">edit</i><span style="font-family:ATL;font-size:2vh;">${doc.data().author}</span></a>
             </div>
+            <br>
 
     `;
     // COMBAK:
