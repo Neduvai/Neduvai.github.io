@@ -7,6 +7,10 @@
      top:10px;
 }
 
+.recyclerview {
+  padding: 1vh;
+}
+
 .responsive {
   width: 100%;
   height: auto;
