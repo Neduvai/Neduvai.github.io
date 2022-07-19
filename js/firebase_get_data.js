@@ -35,6 +35,7 @@ docRef.get().then((doc) => {
         document.getElementById("content").innerHTML = doc.data().content;
         document.getElementById("img").src = doc.data().img_url;
         document.getElementById("author_img").src = doc.data().author_img;
+        window.twttr.widgets.load()
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
