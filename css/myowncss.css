@@ -9,6 +9,7 @@
 
 .recyclerview {
   padding: 1vh;
+  display:flex;align-item:center;flex-direction:column;
 }
 
 .responsive {

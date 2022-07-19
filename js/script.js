@@ -3,7 +3,6 @@ function closeSideNav(){
     document.getElementById("slideMenu").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("main").style.width = "100%";
-    document.getElementById("recyclerview").style = "display:flex;align-item:center;flex-direction:column;";
 
 }
 
