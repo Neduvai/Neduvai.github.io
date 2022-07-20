@@ -10,6 +10,20 @@ measurementId: "G-7LQM8JLB4J"
 
 };
 
+async function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+on();
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var itemsProcessed = 0;
@@ -35,7 +49,9 @@ docRef.get().then((doc) => {
         document.getElementById("content").innerHTML = doc.data().content;
         document.getElementById("img").src = doc.data().img_url;
         document.getElementById("author_img").src = doc.data().author_img;
-        window.twttr.widgets.load()
+        window.twttr.widgets.load();
+        off();
+
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
@@ -43,3 +59,9 @@ docRef.get().then((doc) => {
 }).catch((error) => {
     console.log("Error getting document:", error);
 });
+
+(async () => {
+    console.time("Slept for")
+    await wait(2500)
+    console.timeEnd("Slept for")
+})()

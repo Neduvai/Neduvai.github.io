@@ -4,6 +4,17 @@ function closeSideNav(){
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("main").style.width = "100%";
 }
+async function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
 
 document.addEventListener("DOMContentLoaded",function(){
 
@@ -17,5 +28,4 @@ document.addEventListener("DOMContentLoaded",function(){
     },false)
 
     document.getElementById("slideClose").addEventListener('click',closeSideNav,false)
-
 });

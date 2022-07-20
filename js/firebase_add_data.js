@@ -15,6 +15,18 @@ measurementId: "G-7LQM8JLB4J"
 
 };
 
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+async function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var itemsProcessed = 0;
@@ -23,6 +35,8 @@ var itemsProcessed = 0;
 const db = firebase.firestore();
 let htmlCode = ``;
 let index=0;
+const recyclerview = document.getElementById("recyclerview");
+on();
 db.collection("artsection").orderBy("date","desc").limit(20).get().then((querySnapshot) => {
 
   var bar = new Promise((resolve, reject) => {
@@ -47,5 +61,5 @@ bar.then(() => {
 });
 
 });
-
-const recyclerview = document.getElementById("recyclerview");
+await wait(1000);
+off();
