@@ -8,17 +8,22 @@
 }
 
 .recyclerview {
-  padding: 1vh;
-  display:flex;align-item:center;flex-direction:column;
+  padding: 2vmin 5vmin;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html,body{
+  width: 100%;
+  font-family: ATM;
+  overflow-x: hidden;
 }
 
 .responsive {
   width: 100%;
-  max-width: 70vmax;
-  max-height: 60vh;
-  display: block;
-  object-fit: cover;
-  height: auto;
+  height: 40%;
+  max-height: 40%;
 }
 
 .responsive_cover {

@@ -29,13 +29,11 @@ db.collection("artsection").orderBy("date","desc").limit(20).get().then((querySn
 
     querySnapshot.forEach((doc) => {
       console.log(doc.id, " => ", doc.data().title);
-      htmlCode=htmlCode +`<div id="20220719" onclick="window.location.href='./detailed?name=${doc.id}'" class="waves-effect waves-red card" style="padding:1vh;" >
-              <img class="responsive" src="${doc.data().img_url}"/><br>
-              <span class="flow-text" style="font-style:ATM;">${doc.data().title}</span><br>
-              <a href="" style="display: flex;align-items: center;"><i class="tiny material-icons">edit</i><span style="font-family:ATL;font-size:2vh;">${doc.data().author}</span></a>
+      htmlCode=htmlCode +`<div onclick="window.location.href='./detailed?name=${doc.id}'" class="waves-effect waves-red card" style="padding:1vmax;display:flex;flex-direction:column;" >
+              <img src="${doc.data().img_url}" style="max-height:50vh;"/>
+              <span class="flow-text" style="font-style:ATM;">${doc.data().title}</span>
+              <a href="" style="display:inline-flex;align-items: center;"><i class="tiny material-icons">edit</i><span style="font-family:ATL;font-size:2vh;">${doc.data().author}</span></a>
             </div>
-            <br>
-
     `;
     // COMBAK:
     if (index === querySnapshot.size -1) resolve();

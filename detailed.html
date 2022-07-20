@@ -12,10 +12,9 @@
     <script src="../js/materialize.js"></script>
     <script src="../js/twtte.js"></script>
   </head>
-  <body onload="closeSideNav()" style="font-family:ATM;">
-
+  <body>
     <span id="slideOpen" class="hamButton">&#9776;</span>
-    <div id="slideMenu" class="slidemenu">
+    <div id="slideMenu" class="slidemenuclosed">
         <span id="slideClose" class="closeButton">&times;</span>
         <ul>
             <a href="../home.html"><li>முகப்பு</li></a>
@@ -24,9 +23,9 @@
             <a href="#"><li>தொடர்பு கொள்க</li></a>
         </ul>
     </div>
-    <main>
+    <main id = "main" class="main_open">
     <div class="container_grey">
-      <h5 id="title" style="font-family:ATB;font-size:3vh;padding:1vh;text-align:center;"></h5><br>
+      <h5 id="title" style="font-family:ATB;font-size:7vmin;padding:3vmin;text-align:center;"></h5><br>
       <img id="img" class="responsive_cover" src=""/><br>
       <div class="card" style="padding:5px 10px;display:flex;justify-content: center;flex-direction:row;align-items:center">
         <img id="author_img" class="circle responsive-img" src="" style="height:70px;width:70px;object-fit:cover;"alt=""/>
