@@ -8,7 +8,7 @@
 }
 
 .recyclerview {
-  padding: 2vmin 5vmin;
+  padding: 4svmin 3vmin;
   display:flex;
   flex-direction: column;
   justify-content: center;
