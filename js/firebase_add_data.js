@@ -23,7 +23,7 @@ var itemsProcessed = 0;
 const db = firebase.firestore();
 let htmlCode = ``;
 let index=0;
-db.collection("artsection").orderBy("date","asc").limit(20).get().then((querySnapshot) => {
+db.collection("artsection").orderBy("date","desc").limit(20).get().then((querySnapshot) => {
 
   var bar = new Promise((resolve, reject) => {
 
