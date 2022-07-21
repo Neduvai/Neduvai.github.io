@@ -9,7 +9,7 @@
 
 /* From uiverse.io by @alexruix */
 .card {
-  border-radius: 30px;
+  border-radius: 20px;
   background: white;
   box-shadow: 15px 15px 30px #bebebe,
               -15px -15px 30px #ffffff;
@@ -44,8 +44,8 @@ html,body{
 
 .curved_top{
   max-height: 50vh;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .responsive {
