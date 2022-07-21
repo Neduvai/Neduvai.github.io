@@ -26,6 +26,7 @@ on();
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 var itemsProcessed = 0;
 
 // Initialize Cloud Firestore and get a reference to the service
@@ -39,6 +40,8 @@ for (var i = 0, l = params.length; i < l; i++) {
 }
 
 document.getElementById("author").innerHTML = data.name;
+
+analytics.logEvent('views', { article: data.name})
 
 var docRef = db.collection("artsection").doc(data.name);
 
