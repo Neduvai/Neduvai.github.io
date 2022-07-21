@@ -7,6 +7,14 @@
      top:10px;
 }
 
+/* From uiverse.io by @alexruix */
+.card {
+  border-radius: 30px;
+  background: white;
+  box-shadow: 15px 15px 30px #bebebe,
+              -15px -15px 30px #ffffff;
+}
+
 .recyclerview {
   padding: 4svmin 3vmin;
   display:flex;
@@ -32,6 +40,12 @@ html,body{
   width: 100%;
   font-family: ATM;
   overflow-x: hidden;
+}
+
+.curved_top{
+  max-height: 50vh;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .responsive {
@@ -65,6 +79,7 @@ html,body{
 @font-face { font-family: kanchi; src: url('/fonts/kanchi.TTF'); }
 @font-face { font-family: nn; src: url('/fonts/nn.TTF'); }
 @font-face { font-family: ATB; src: url("../css/fonts/ATB.ttf"); }
+@font-face { font-family: ATB; src: url("../css/fonts/ATSB.ttf"); }
 @font-face { font-family: ATEB; src: url("../css/fonts/ATEB.ttf"); }
 @font-face { font-family: ATL; src: url("../css/fonts/ATL.ttf"); }
 @font-face { font-family: ATM; src: url("../css/fonts/ATM.ttf"); }
