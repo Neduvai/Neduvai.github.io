@@ -24,7 +24,6 @@ function off() {
 
 on();
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const analytics = firebase.analytics();
 var itemsProcessed = 0;
@@ -41,8 +40,6 @@ for (var i = 0, l = params.length; i < l; i++) {
 
 document.getElementById("author").innerHTML = data.name;
 
-analytics.logEvent('views', { article: data.name})
-
 var docRef = db.collection("artsection").doc(data.name);
 
 docRef.get().then((doc) => {
@@ -54,7 +51,7 @@ docRef.get().then((doc) => {
         document.getElementById("author_img").src = doc.data().author_img;
         window.twttr.widgets.load();
         off();
-
+        analytics.logEvent(doc.data().title);
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
