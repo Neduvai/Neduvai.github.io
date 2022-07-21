@@ -43,10 +43,15 @@ db.collection("artsection").orderBy("date","desc").limit(20).get().then((querySn
 
     querySnapshot.forEach((doc) => {
       console.log(doc.id, " => ", doc.data().title);
-      htmlCode=htmlCode +`<div onclick="window.location.href='./detailed?name=${doc.id}'" class="waves-effect waves-red card" style="padding:1vmax;display:flex;flex-direction:column;" >
-              <img src="${doc.data().img_url}" style="max-height:50vh;"/>
-              <span class="flow-text" style="font-style:ATM;">${doc.data().title}</span>
-              <a href="" style="display:inline-flex;align-items: center;"><i class="tiny material-icons">edit</i><span style="font-family:ATL;font-size:2vh;">${doc.data().author}</span></a>
+      htmlCode=htmlCode +`<div onclick="window.location.href='./detailed?name=${doc.id}'" class="card" style="display:flex;flex-direction:column;" >
+              <img src="${doc.data().img_url}" class="curved_top"/>
+              <span style="display:flex;flex-direction:column;padding:1.3vmax;">
+                <span style="font-family:ATB;font-size:2vmax;margin-left:2vmin;">${doc.data().title}</span><br>
+                <span style="display:flex; flex-direction:row;max-height:2vmax;margin-left:4vmin;">
+                  <img style="flex:.1;height:auto;object-fit:contain;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA90lEQVRIie3TPUoDQRjG8Z8fhdhHULTOBbyA4JksY+7hBXQJWFgJSgRrA54hYqVC0ggWrsXOQhiz62Z3rPSBh4F5mf/zzhf/SqQDjDAPvkQ/JfwVeeS3UOus0RJ46SxFwLwmYPbT4vWO4XmKgNua2nXzXqrVV1xofDwv2E8RQPFaMsWZz3CREv7HtVZT28ARjnGIPcVd5JjiCQ+4wR0+m4Zu4QTPqj9Y7Cl6C4wBJtiJ4bt4XAFc+jzsGLYxDvOTOOCqJXwzrB8GeC+MgzjgvSO8nB+HnXzTKvCsAp7jdBkc7huAP3BWAx9Wwduocedt9avwxYBK+BfqJ5E+sCDlYQAAAABJRU5ErkJggg==">
+                  <span style="font-family:ATM;font-size:1.3vmax;flex:.9;">${doc.data().author}</span
+                </span>
+              <span>
             </div>
     `;
     // COMBAK:
