@@ -26,7 +26,7 @@ on();
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+const analytics = firebase.analytics();
 var itemsProcessed = 0;
 
 // Initialize Cloud Firestore and get a reference to the service
